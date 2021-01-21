@@ -97,6 +97,7 @@ func _on_StartTimer_timeout():
 	$ScoreTimer.start()
 
 func _on_Player_dash():
+	$DashSound.play()
 	$HUD.setDashIcon(false)
 
 func _on_Player_canDash():
